@@ -1,0 +1,293 @@
+INFO - 2023-11-07 00:23:07 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+ERROR - 2023-11-07 01:50:29 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-11-07 01:50:29 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *, STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\' + Item_Code + \') \' FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM, STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2, STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\' + vendorcode + \') \' FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3, STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' * \' + CAST(PoUnitPrice AS VARCHAR) FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4, STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR) FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+FROM "CBInv"."dbo"."vpodetail" "p1"
+WHERE PoDate >= :PoDate:
+ORDER BY "PoDate" DESC', [...], false)
+ 2 APPPATH\Models\ModelViewData.php(27): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-07 01:52:09 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-11-07 01:52:09 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *, STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \' FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM, STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2, STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \' FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3, STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR) FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4, STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR) FROM vpodetail p2 WHERE p1.DkmNo = p2.DkmNo FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+FROM "CBInv"."dbo"."vpodetail" "p1"
+WHERE PoDate >= :PoDate:
+ORDER BY "PoDate" DESC', [...], false)
+ 2 APPPATH\Models\ModelViewData.php(26): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:01:32 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:02:12 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:02:21 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:02:49 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:03:04 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:04:03 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:11:33 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:11:43 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:12:08 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:24:08 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:30:48 --> Undefined variable $data
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:31:04 --> Undefined variable $data
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:43:41 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:45:15 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:46:25 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:46:30 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:46:56 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:49:37 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:49:41 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:49:47 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:50:55 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(14): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-07 03:56:24 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(20): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

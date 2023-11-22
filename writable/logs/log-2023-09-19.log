@@ -1,0 +1,66 @@
+CRITICAL - 2023-09-19 01:00:48 --> Undefined variable $serverName
+in APPPATH\Views\partial\header.php on line 4.
+ 1 APPPATH\Views\partial\header.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $serverName', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Submission.php(11): view('partial/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-19 02:11:30 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-19 04:38:15 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-19 07:34:16 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-09-19 09:01:49 --> Call to undefined function sqlsrv_connect()
+in APPPATH\Views\partial\header.php on line 5.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 4 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 09:02:16 --> Undefined variable $conn
+in APPPATH\Views\partial\header.php on line 6.
+ 1 APPPATH\Views\partial\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 09:02:37 --> Call to undefined function sqlsrv_connect()
+in APPPATH\Views\partial\header.php on line 5.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 4 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 09:04:51 --> Call to undefined function sqlsrv_connect()
+in APPPATH\Views\partial\header.php on line 5.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 4 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 09:30:20 --> Undefined variable $db_connect
+in APPPATH\Views\partial\header.php on line 2.
+ 1 APPPATH\Views\partial\header.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db_connect', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

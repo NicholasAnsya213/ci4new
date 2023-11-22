@@ -1,0 +1,142 @@
+INFO - 2023-09-15 02:41:59 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-15 02:42:03 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-15 02:42:23 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-15 02:42:47 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-15 02:43:28 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+INFO - 2023-09-15 02:48:12 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-09-15 02:53:42 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 02:54:11 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 02:54:15 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 02:57:37 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:00:47 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:00:59 --> Invalid file: "form.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('form', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('form')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-15 03:04:26 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-09-15 03:13:16 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:13:31 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:13:53 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:14:44 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:14:59 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:15:15 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:15:38 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:16:25 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(10): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 03:46:07 --> Invalid file: "partial/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/sidebar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/sidebar', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('partial/sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

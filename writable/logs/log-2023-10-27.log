@@ -1,0 +1,484 @@
+CRITICAL - 2023-10-27 02:55:02 --> syntax error, unexpected token ","
+in APPPATH\Views\partial\header.php on line 111.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 3 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 02:55:57 --> Undefined variable $statusmenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusmenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 02:56:16 --> Undefined variable $statusmenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusmenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 02:56:59 --> Undefined variable $statusmenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $statusmenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 02:57:08 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 02:58:45 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:03:10 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:03:34 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:03:53 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:06:53 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:07:13 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:07:15 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:07:36 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:08:25 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:39:25 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:41:10 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Submission.php on line 16.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('submission', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('submission')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('submission')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 03:43:34 --> Call to undefined method App\Models\ModelSubmission::AND
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Submission.php(17): CodeIgniter\Model->__call('AND', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 03:43:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(GETDATE())' to data type int.
+CRITICAL - 2023-10-27 03:43:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(GETDATE())' to data type int.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tpoheader"
+WHERE MONTH(PoDate) = :MONTH(PoDate):
+AND YEAR(PoDate) = :YEAR(PoDate):
+ORDER BY "PoNo" DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Submission.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 03:44:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(CURDATE())' to data type int.
+CRITICAL - 2023-10-27 03:44:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(CURDATE())' to data type int.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tpoheader"
+WHERE MONTH(PoDate) = :MONTH(PoDate):
+AND YEAR(PoDate) = :YEAR(PoDate):
+ORDER BY "PoNo" DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Submission.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 03:53:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(GETDATE())' to data type int.
+CRITICAL - 2023-10-27 03:53:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'MONTH(GETDATE())' to data type int.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tpoheader"
+WHERE MONTH(PoDate) = :MONTH(PoDate):
+AND YEAR(PoDate) = :YEAR(PoDate):
+ORDER BY "PoNo" DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Submission.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 04:03:55 --> Undefined variable $activeMenu
+in APPPATH\Views\partial\header.php on line 111.
+ 1 APPPATH\Views\partial\header.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeMenu', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 111)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Add.php(17): view('partial/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 04:05:50 --> Undefined variable $vpo_test
+in APPPATH\Views\add_view.php on line 41.
+ 1 APPPATH\Views\add_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo_test', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(19): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 04:05:58 --> Undefined variable $vpo_test
+in APPPATH\Views\add_view.php on line 41.
+ 1 APPPATH\Views\add_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo_test', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(19): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 04:16:44 --> Undefined variable $vpo_test
+in APPPATH\Views\add_view.php on line 41.
+ 1 APPPATH\Views\add_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo_test', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(16): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 06:30:13 --> Undefined variable $tbarang
+in APPPATH\Views\add_view.php on line 124.
+ 1 APPPATH\Views\add_view.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbarang', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(16): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 06:44:31 --> Undefined variable $tbarang
+in APPPATH\Views\add_view.php on line 151.
+ 1 APPPATH\Views\add_view.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbarang', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 151)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(16): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index('search')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 06:45:00 --> Undefined variable $tbarang
+in APPPATH\Views\add_view.php on line 151.
+ 1 APPPATH\Views\add_view.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbarang', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 151)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(16): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index('search')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 08:46:26 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(16): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 08:49:09 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 08:55:53 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:00:24 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:02:48 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 09:03:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-10-27 09:03:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(20): CodeIgniter\Database\BaseConnection->query('SELECT *
+        FROM vpo_test
+        WHERE MONTH(PoDate) = MONTH(GETDATE())
+        AND YEAR(PoDate) = YEAR(GETDATE());')
+ 2 APPPATH\Controllers\Add.php(24): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 09:04:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-10-27 09:04:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(20): CodeIgniter\Database\BaseConnection->query('SELECT *
+        FROM vpo_test
+        WHERE MONTH(PoDate) = MONTH(GETDATE())
+        AND YEAR(PoDate) = YEAR(GETDATE());')
+ 2 APPPATH\Controllers\Add.php(24): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-27 09:05:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+CRITICAL - 2023-10-27 09:05:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting date and/or time from character string.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(20): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT *
+        FROM vpo_test
+        WHERE MONTH(PoNo) = MONTH(GETDATE())
+        AND YEAR(PoNo) = YEAR(GETDATE());')
+ 2 APPPATH\Controllers\Add.php(24): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:07:30 --> Undefined property: stdClass::$item_code
+in APPPATH\Views\add_view.php on line 39.
+ 1 APPPATH\Views\add_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$item_code', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:08:16 --> Undefined variable $value
+in APPPATH\Views\add_view.php on line 39.
+ 1 APPPATH\Views\add_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:08:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\add_view.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:09:22 --> Cannot use object of type stdClass as array
+in APPPATH\Views\add_view.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-27 09:10:32 --> Undefined property: stdClass::$item_code
+in APPPATH\Views\add_view.php on line 39.
+ 1 APPPATH\Views\add_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$item_code', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

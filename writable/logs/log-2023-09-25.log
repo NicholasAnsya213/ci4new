@@ -1,0 +1,392 @@
+ERROR - 2023-09-25 00:41:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'CBInv.dbo.vspk_tests'.
+CRITICAL - 2023-09-25 00:41:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'CBInv.dbo.vspk_tests'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_tests"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 00:42:23 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2023-09-25 00:42:23 --> Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_test"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 00:42:55 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2023-09-25 00:42:55 --> Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_test"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Goods.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Goods->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Goods))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 00:42:56 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2023-09-25 00:42:56 --> Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_test"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Goods.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Goods->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Goods))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 00:42:59 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2023-09-25 00:42:59 --> Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_test"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-25 02:29:48 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-09-25 02:32:19 --> Undefined variable $_settings
+in APPPATH\Views\purchase_view.php on line 1.
+ 1 APPPATH\Views\purchase_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_settings', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 5 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:32:37 --> Undefined variable $conn
+in APPPATH\Views\purchase_view.php on line 37.
+ 1 APPPATH\Views\purchase_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 5 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:32:54 --> syntax error, unexpected token "endwhile", expecting end of file
+in APPPATH\Views\purchase_view.php on line 71.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 3 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:33:02 --> Undefined variable $i
+in APPPATH\Views\purchase_view.php on line 36.
+ 1 APPPATH\Views\purchase_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 5 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:33:21 --> Undefined variable $_settings
+in APPPATH\Views\purchase_view.php on line 1.
+ 1 APPPATH\Views\purchase_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_settings', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 5 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 05:08:05 --> Undefined variable $_settings
+in APPPATH\Views\purchase_view.php on line 1.
+ 1 APPPATH\Views\purchase_view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_settings', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php', 1)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\purchase_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('purchase_view', [], true)
+ 5 APPPATH\Controllers\Purchase.php(12): view('purchase_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Purchase->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:17:35 --> Cannot redeclare App\Controllers\Submission::add()
+in APPPATH\Controllers\Submission.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-25 06:18:00 --> Class "App\Controllers\vspk_testc" not found
+in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 06:23:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendorname'.
+CRITICAL - 2023-09-25 06:23:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendorname'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_tbarangc"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 06:26:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendorname'.
+CRITICAL - 2023-09-25 06:26:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendorname'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_tbarangc"
+ORDER BY "vendorname"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-25 06:27:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoNumber'.
+CRITICAL - 2023-09-25 06:27:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoNumber'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."vspk_tbarangc"
+ORDER BY "PoNumber"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PreOrder.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:34:25 --> Class "App\Controllers\ModelPreOrder" not found
+in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:46:23 --> Class "App\Controllers\ModelPreOrder" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:46:28 --> Class "App\Controllers\ModelPreOrder" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:46:40 --> Undefined variable $db
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 APPPATH\Controllers\Submission.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\ci4project\\app\\Controllers\\Submission.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:48:17 --> App\Models\ModelPreOrder::__construct(): Argument #1 ($db) must be of type CodeIgniter\Database\ConnectionInterface, null given, called in C:\xampp\htdocs\ci4project\app\Controllers\Submission.php on line 12
+in APPPATH\Models\ModelPreOrder.php on line 10.
+ 1 APPPATH\Controllers\Submission.php(12): App\Models\ModelPreOrder->__construct(null)
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:48:41 --> Too few arguments to function App\Models\ModelPreOrder::__construct(), 0 passed in C:\xampp\htdocs\ci4project\app\Controllers\PreOrder.php on line 11 and exactly 1 expected
+in APPPATH\Models\ModelPreOrder.php on line 10.
+ 1 APPPATH\Controllers\PreOrder.php(11): App\Models\ModelPreOrder->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:01 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:18 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:19 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:19 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:19 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:20 --> Class "App\Models\ModelSubmission" not found
+in APPPATH\Controllers\Submission.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 06:50:38 --> App\Models\ModelSubmission::__construct(): Argument #1 ($db) must be of type CodeIgniter\Database\ConnectionInterface, null given, called in C:\xampp\htdocs\ci4project\app\Controllers\Submission.php on line 12
+in APPPATH\Models\ModelSubmission.php on line 10.
+ 1 APPPATH\Controllers\Submission.php(12): App\Models\ModelSubmission->__construct(null)
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:12:52 --> Too few arguments to function App\Models\ModelSubmission::__construct(), 0 passed in C:\xampp\htdocs\ci4project\app\Controllers\Submission.php on line 11 and exactly 1 expected
+in APPPATH\Models\ModelSubmission.php on line 10.
+ 1 APPPATH\Controllers\Submission.php(11): App\Models\ModelSubmission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:14:43 --> Too few arguments to function App\Models\ModelSubmission::__construct(), 0 passed in C:\xampp\htdocs\ci4project\app\Controllers\Submission.php on line 13 and exactly 1 expected
+in APPPATH\Models\ModelSubmission.php on line 10.
+ 1 APPPATH\Controllers\Submission.php(13): App\Models\ModelSubmission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:19:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:20:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:20:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:28:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:28:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:38:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 07:38:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:35:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 08:38:28 --> Invalid file: "submission/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('submission/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('submission/index', [], true)
+ 3 APPPATH\Controllers\Submission.php(59): view('submission/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 08:40:27 --> Invalid file: "submission/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('submission/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('submission/index', [], true)
+ 3 APPPATH\Controllers\Submission.php(59): view('submission/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Submission->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submission))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:49:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:50:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:57:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:57:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:58:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:58:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:58:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:59:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:59:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 08:59:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 09:00:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-09-25 09:02:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,77 @@
+CRITICAL - 2023-10-04 00:33:19 --> Unclosed '{' on line 102
+in APPPATH\Views\add_view.php on line 125.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 00:33:38 --> Unclosed '{' on line 102
+in APPPATH\Views\add_view.php on line 125.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-04 01:35:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-04 02:38:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-04 02:45:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 06:35:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-04 06:35:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang") VALUES (:PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(44): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 06:38:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-04 06:38:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang") VALUES (:PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(44): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 06:38:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-04 06:38:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang") VALUES (:PoNo:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(45): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-04 06:38:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

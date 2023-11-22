@@ -1,0 +1,359 @@
+ERROR - 2023-10-25 00:46:49 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT TOP (50)...', Array, false)
+#3 C:\xampp\htdocs\ci4project\system\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\ci4project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(29): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->index()
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-25 00:46:49 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT TOP (50) *
+FROM "CBInv"."dbo"."vpo_test"
+WHERE "category" = :category:
+AND "PoNo" >= :PoNo:
+AND "PoNo" <= :PoNo.1:
+ORDER BY "PoNo" DESC', [...], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Add.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+INFO - 2023-10-25 02:12:49 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CAdd::index
+INFO - 2023-10-25 02:16:59 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CAdd::index
+ERROR - 2023-10-25 02:38:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:38:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:39:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:39:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 02:42:01 --> Undefined variable $tbarang
+in APPPATH\Views\partial\footer.php on line 123.
+ 1 APPPATH\Views\partial\footer.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tbarang', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\footer.php', 123)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/footer', [], true)
+ 5 APPPATH\Controllers\PreOrder.php(18): view('partial/footer')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PreOrder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PreOrder))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+WARNING - 2023-10-25 02:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+WARNING - 2023-10-25 02:43:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Submission::$ModelSubmission is deprecated in APPPATH\Controllers\Submission.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Submission->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:43:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:43:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:47:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:47:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:51:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:51:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:51:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:51:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 02:56:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-25 02:56:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:01:28 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(49): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:02:21 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(49): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:02:48 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(49): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:05:06 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:05:08 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:05:54 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:07:03 --> Trying to access array offset on value of type resource
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type resource', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:07:14 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:07:37 --> Undefined array key "item_name"
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:09:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\add_view.php on line 184.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(47): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:11:12 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(47): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-25 03:12:00 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-10-25 03:12:00 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tbarang"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Add.php(44): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:12:50 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 184.
+ 1 APPPATH\Views\add_view.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:25:33 --> Call to a member function select() on null
+in APPPATH\Controllers\Add.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 03:25:54 --> Undefined array key "item_name"
+in APPPATH\Views\add_view.php on line 179.
+ 1 APPPATH\Views\add_view.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 179)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(48): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 07:13:09 --> Undefined array key "item_name"
+in APPPATH\Views\add_view.php on line 179.
+ 1 APPPATH\Views\add_view.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 179)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(85): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-25 07:13:39 --> Undefined array key "item_name"
+in APPPATH\Views\add_view.php on line 179.
+ 1 APPPATH\Views\add_view.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 179)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(85): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

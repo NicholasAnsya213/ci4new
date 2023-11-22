@@ -1,0 +1,405 @@
+ERROR - 2023-10-05 01:42:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23080057, IT).
+CRITICAL - 2023-10-05 01:42:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23080057, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang") VALUES (:PoNo:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(46): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 02:18:35 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-10-05 02:18:36 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tbarang"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Goods.php(13): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Goods->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Goods))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 02:52:13 --> Call to undefined method App\Models\ModelAdd::getNextOrderNumber
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(53): CodeIgniter\Model->__call('getNextOrderNumber', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 02:54:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DivisionCode'.
+CRITICAL - 2023-10-05 02:54:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DivisionCode'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT MAX("OrderNumber") AS "OrderNumber"
+FROM "CBInv"."dbo"."tpoheader"
+WHERE "DivisionCode" = :DivisionCode:
+AND YEAR(OrderDate) = :YEAR(OrderDate):
+AND MONTH(OrderDate) = :MONTH(OrderDate):', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Models\ModelAdd.php(34): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Add.php(53): App\Models\ModelAdd->getNextOrderNumber('IT', '2023-10-05')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 02:56:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OrderNumber'.
+CRITICAL - 2023-10-05 02:56:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OrderNumber'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT MAX("OrderNumber") AS "OrderNumber"
+FROM "CBInv"."dbo"."tpoheader"
+WHERE "KodeDept" = :KodeDept:
+AND YEAR(PoDate) = :YEAR(PoDate):
+AND MONTH(PoDate) = :MONTH(PoDate):', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Models\ModelAdd.php(34): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Add.php(53): App\Models\ModelAdd->getNextOrderNumber('IT', '2023-10-05')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 03:03:11 --> Call to undefined method App\Models\ModelAdd::generateUniquePoNumber
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(57): CodeIgniter\Model->__call('generateUniquePoNumber', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 03:09:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-05 03:09:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'PoNo', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 03:25:12 --> Call to undefined method App\Models\ModelAdd::generateUniquePoNumber
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(58): CodeIgniter\Model->__call('generateUniquePoNumber', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 04:08:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'CBInv.dbo.your_table_name'.
+CRITICAL - 2023-10-05 04:08:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'CBInv.dbo.your_table_name'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT MAX("order_number_column") AS "order_number_column"
+FROM "CBInv"."dbo"."your_table_name"
+WHERE YEAR(PoDate) = :YEAR(PoDate):
+AND MONTH(PoDate) = :MONTH(PoDate):', [...], false)
+ 2 APPPATH\Models\ModelAdd.php(51): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Models\ModelAdd.php(31): App\Models\ModelAdd->getHighestOrderNumber('23', '10')
+ 4 APPPATH\Controllers\Add.php(54): App\Models\ModelAdd->generatePoNo()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 04:08:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'order_number_column'.
+CRITICAL - 2023-10-05 04:08:58 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'order_number_column'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT MAX("order_number_column") AS "order_number_column"
+FROM "CBInv"."dbo"."tpoheader"
+WHERE YEAR(PoDate) = :YEAR(PoDate):
+AND MONTH(PoDate) = :MONTH(PoDate):', [...], false)
+ 2 APPPATH\Models\ModelAdd.php(51): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Models\ModelAdd.php(31): App\Models\ModelAdd->getHighestOrderNumber('23', '10')
+ 4 APPPATH\Controllers\Add.php(54): App\Models\ModelAdd->generatePoNo()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 04:18:37 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Add.php on line 79.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('Add/index', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Add/index')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Add/index')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 04:24:58 --> Undefined variable $model
+in APPPATH\Models\ModelAdd.php on line 37.
+ 1 APPPATH\Models\ModelAdd.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php', 37)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelAdd')
+ 5 APPPATH\Controllers\Add.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 04:25:01 --> Undefined variable $model
+in APPPATH\Models\ModelAdd.php on line 37.
+ 1 APPPATH\Models\ModelAdd.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php', 37)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelAdd')
+ 5 APPPATH\Controllers\Add.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 04:40:01 --> Unclosed '{' on line 8
+in APPPATH\Models\ModelAdd.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4project\\app\\Models\\ModelAdd.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelAdd')
+ 3 APPPATH\Controllers\Add.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelAdd')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 04:49:29 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Add.php on line 86.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('Add/index', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Add/index')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Add/index')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-05 06:02:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-10-05 06:02:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'KodeDept', table 'CBInv.dbo.tpoheader'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","PoNumber","KodeDept","PersonInCharge","PoDate","Delivery","ref","ShipmentLoc","ShipmentTerms","VendorNo","MataUang","TermsOfPayment","InWord","NilaiDalamRp") VALUES (:PoNo:, :PoNumber:, :KodeDept:, :PersonInCharge:, :PoDate:, :Delivery:, :ref:, :ShipmentLoc:, :ShipmentTerms:, :VendorNo:, :MataUang:, :TermsOfPayment:, :InWord:, :NilaiDalamRp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Add.php(58): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->create()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:43:08 --> Undefined variable $results
+in APPPATH\Views\add_view.php on line 154.
+ 1 APPPATH\Views\add_view.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 154)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:45:30 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:46:16 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:47:40 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:48:40 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:48:43 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:48:45 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:48:48 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:49:50 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:50:14 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:50:39 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:51:26 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:52:40 --> Call to undefined function form_open()
+in APPPATH\Views\add_view.php on line 111.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 07:54:26 --> Undefined variable $results
+in APPPATH\Views\add_view.php on line 158.
+ 1 APPPATH\Views\add_view.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 158)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:30:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\add_view.php on line 160.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:31:41 --> Undefined variable $value
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:31:52 --> Cannot use object of type stdClass as array
+in APPPATH\Views\add_view.php on line 160.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 4 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:32:13 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:32:39 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:34:18 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(21): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:42:04 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(23): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-05 08:42:17 --> Undefined array key "item_code"
+in APPPATH\Views\add_view.php on line 160.
+ 1 APPPATH\Views\add_view.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_code"', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 160)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(23): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

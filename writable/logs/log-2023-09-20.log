@@ -1,0 +1,285 @@
+INFO - 2023-09-20 00:26:33 --> REDIRECTED ROUTE at http://localhost/ci4project/public/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-09-20 00:30:09 --> Undefined variable $servername
+in APPPATH\Views\partial\header.php on line 5.
+ 1 APPPATH\Views\partial\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $servername', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 5 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:34:23 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:35:54 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:43:18 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:43:51 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:44:09 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:51:22 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 01:53:58 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:07:32 --> Class "app\Models\goods_model" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:10:56 --> Class "App\Controllers\modelGoods" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:11:01 --> Class "App\Controllers\modelGoods" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:11:25 --> Class "app\Models\modelGoods" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:23:07 --> Class "app\Models\modelGoods" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 02:32:02 --> Class "app\Models\modelGoods" not found
+in APPPATH\Controllers\Goods.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Goods->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 06:47:53 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\partial\header.php on line 8.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 3 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 06:48:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select * from v...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 06:48:20 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select * from vspk_test')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 07:00:56 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 *...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 07:00:56 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 * from vspk_test')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 07:01:33 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 *...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 07:01:33 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 * from tbarang')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 07:05:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 *...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 07:05:16 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 * from vspk_tests')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 07:05:35 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 *...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 07:05:35 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 * from vspk_tests')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 07:05:51 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 *...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('partial/header', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Form.php(11): view('partial/header', Array)
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Form->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-20 07:05:51 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [67].  SQLSTATE: 08001, code: 67
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 67
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\partial\header.php(4): CodeIgniter\Database\BaseConnection->query('select TOP 10 * from vspk_tests')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\partial\\header.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('partial/header', [], true)
+ 6 APPPATH\Controllers\Form.php(11): view('partial/header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Form->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

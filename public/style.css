@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'GitHub Mona Sans';
+    src: url('../Fonts/GitHub-Mona-Sans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'GitHub Mona Sans', sans-serif;
+  }
+  

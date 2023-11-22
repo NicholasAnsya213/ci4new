@@ -1,0 +1,722 @@
+CRITICAL - 2023-11-01 00:29:11 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 43.
+ 1 APPPATH\Views\add_view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:32:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2023-11-01 01:32:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(day, -30, getdate()).)
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:32:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2023-11-01 01:32:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(day, -30, getdate()).)
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:41:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+CRITICAL - 2023-11-01 01:41:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(day, -30, getdate())
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:42:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+CRITICAL - 2023-11-01 01:42:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(day, -30, getdate())
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:43:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+CRITICAL - 2023-11-01 01:43:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ';'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(day, -30, getdate())
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:47:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Argument data type varchar is invalid for argument 2 of dateadd function.
+CRITICAL - 2023-11-01 01:47:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Argument data type varchar is invalid for argument 2 of dateadd function.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoDate >= DATEADD(MONTH, \'08\', getdate()))
+            GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 01:51:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Only one expression can be specified in the select list when the subquery is not introduced with EXISTS.
+CRITICAL - 2023-11-01 01:51:11 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Only one expression can be specified in the select list when the subquery is not introduced with EXISTS.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+            STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+            STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                FROM vpodetail p2
+                WHERE p1.DkmNo = p2.DkmNo
+                FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE DkmNo IN (SELECT * FROM vpodetail WHERE PoDate >= DATEADD(MONTH, -3, GETDATE()))
+            ORDER BY PoDate;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 02:00:38 --> Unclosed '{' on line 43
+in APPPATH\Views\add_view.php on line 153.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 02:21:01 --> Undefined property: stdClass::$KodeDept
+in APPPATH\Views\add_view.php on line 48.
+ 1 APPPATH\Views\add_view.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$KodeDept', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 02:21:27 --> Undefined property: stdClass::$KodeDept
+in APPPATH\Views\add_view.php on line 48.
+ 1 APPPATH\Views\add_view.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$KodeDept', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 03:03:41 --> Undefined property: stdClass::$kodedept
+in APPPATH\Views\add_view.php on line 47.
+ 1 APPPATH\Views\add_view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$kodedept', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 03:03:44 --> Undefined property: stdClass::$kodedept
+in APPPATH\Views\add_view.php on line 47.
+ 1 APPPATH\Views\add_view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$kodedept', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:04:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'vpodetail.PoDate' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2023-11-01 03:04:33 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'vpodetail.PoDate' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(43): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            GROUP BY DkmNo
+        )
+        
+        SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+        FROM CTE
+        ORDER BY DkmNo, ITEM, ITEM2, ITEM3;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:05:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+CRITICAL - 2023-11-01 03:05:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(42): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC
+        )
+        
+        SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+        FROM CTE
+        ORDER BY DkmNo, ITEM, ITEM2, ITEM3;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:06:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+CRITICAL - 2023-11-01 03:06:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC
+        )
+        
+        SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+        FROM CTE')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:07:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-11-01 03:07:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC)')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:07:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-11-01 03:07:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3,
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC)')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:08:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+CRITICAL - 2023-11-01 03:08:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3,
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC)')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:08:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+CRITICAL - 2023-11-01 03:08:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The ORDER BY clause is invalid in views, inline functions, derived tables, subqueries, and common table expressions, unless TOP, OFFSET or FOR XML is also specified.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('WITH CTE AS (
+            SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber, kodedept,
+                (SELECT CHAR(13) + CHAR(10) + Item_Code
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM,
+                (SELECT CHAR(13) + CHAR(10) + item_name
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM2,
+                (SELECT CHAR(13) + CHAR(10) + vendorname
+                    FROM vpodetail p2
+                    WHERE p1.DkmNo = p2.DkmNo
+                    FOR XML PATH(\'\')) AS ITEM3,
+            STUFF(ITEM, 1, 2, \'\') AS ITEM,
+            STUFF(ITEM2, 1, 2, \'\') AS ITEM2,
+            STUFF(ITEM3, 1, 2, \'\') AS ITEM3
+            FROM vpodetail p1
+            WHERE PoDate >= DATEADD(MONTH, -3, GETDATE())
+            ORDER BY PoDate DESC)')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 03:10:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-11-01 03:10:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT *
+        STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 03:30:03 --> Undefined property: stdClass::$ITEM3
+in APPPATH\Views\add_view.php on line 185.
+ 1 APPPATH\Views\add_view.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ITEM3', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 185)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-01 03:30:49 --> Undefined property: stdClass::$ITEM3
+in APPPATH\Views\add_view.php on line 220.
+ 1 APPPATH\Views\add_view.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ITEM3', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 220)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 04:29:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+CRITICAL - 2023-11-01 04:29:57 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(33): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + PoQty + PoUnit + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:15:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-11-01 07:15:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:17:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+CRITICAL - 2023-11-01 07:17:03 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + PoQty + \' \' + PoUnit + \' \' + PoUnitPrice + \' \' + SubTot
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:24:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+CRITICAL - 2023-11-01 07:24:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(37): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + PoQty + \' \' + PoUnit + \' \' + PoUnitPrice + \' \' + SubTot
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:55:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-11-01 07:55:04 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoUnitPrice AS VARCHAR) + \' \' + CAST(SubTot AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:56:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'.
+CRITICAL - 2023-11-01 07:56:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoUnitPrice AS VARCHAR) + \' \' + CAST(SubTot AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5,
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-01 07:57:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'.
+CRITICAL - 2023-11-01 07:57:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoUnitPrice AS VARCHAR) + \' \' + CAST(SubTot AS VARCHAR) 
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5,
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

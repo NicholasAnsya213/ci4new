@@ -1,0 +1,181 @@
+INFO - 2023-11-20 01:14:11 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+INFO - 2023-11-20 01:16:01 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+ERROR - 2023-11-20 01:27:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-11-20 01:27:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpodetail" ("PoNo","DkmNo","Item_Code","Remarks","PoQty","PoUnit","PoUnitPrice","Price","SubTot","UnitPriceADisc","Weight","kode_budget","FaktorPO","kodedept","Kategori","standarharga","hargamaster","Cek_berat","B_update","L_update","PoDate") VALUES (:PoNo:, :DkmNo:, :Item_Code:, :Remarks:, :PoQty:, :PoUnit:, :PoUnitPrice:, :Price:, :SubTot:, :UnitPriceADisc:, :Weight:, :kode_budget:, :FaktorPO:, :kodedept:, :Kategori:, :standarharga:, :hargamaster:, :Cek_berat:, :B_update:, :L_update:, :PoDate:)', [...], false)
+ 2 APPPATH\Models\ModelDataDetail.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-20 01:29:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'DkmNo', table 'CBInv.dbo.tpodetail'; column does not allow nulls. INSERT fails.
+CRITICAL - 2023-11-20 01:29:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'DkmNo', table 'CBInv.dbo.tpodetail'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpodetail" ("PoNo","DkmNo","Item_Code","Remarks","PoQty","PoUnit","PoUnitPrice","Price","SubTot","UnitPriceADisc","Weight","kode_budget","FaktorPO","kodedept","Kategori","standarharga","hargamaster","Cek_berat","B_update","L_update") VALUES (:PoNo:, :DkmNo:, :Item_Code:, :Remarks:, :PoQty:, :PoUnit:, :PoUnitPrice:, :Price:, :SubTot:, :UnitPriceADisc:, :Weight:, :kode_budget:, :FaktorPO:, :kodedept:, :Kategori:, :standarharga:, :hargamaster:, :Cek_berat:, :B_update:, :L_update:)', [...], false)
+ 2 APPPATH\Models\ModelDataDetail.php(85): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-20 01:30:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-11-20 01:30:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS "numrows"
+FROM "CBInv"."dbo"."tpodetail"
+WHERE "KodeDept" = :KodeDept:
+AND YEAR(PoDate) = :YEAR(PoDate):
+AND MONTH(PoDate) = :MONTH(PoDate):', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\ModelDataDetail.php(46): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Models\ModelDataDetail.php(83): App\Models\ModelDataDetail->generateUniquePoNumber('TWR')
+ 5 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-20 03:46:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-11-20 03:46:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpodetail" ("PoNo","DkmNo","Item_Code","Remarks","PoQty","PoUnit","PoUnitPrice","Price","SubTot","UnitPriceADisc","Weight","kode_budget","FaktorPO","kodedept","Kategori","standarharga","hargamaster","Cek_berat","B_update","L_update","PoDate") VALUES (:PoNo:, :DkmNo:, :Item_Code:, :Remarks:, :PoQty:, :PoUnit:, :PoUnitPrice:, :Price:, :SubTot:, :UnitPriceADisc:, :Weight:, :kode_budget:, :FaktorPO:, :kodedept:, :Kategori:, :standarharga:, :hargamaster:, :Cek_berat:, :B_update:, :L_update:, :PoDate:)', [...], false)
+ 2 APPPATH\Models\ModelDataDetail.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 03:56:04 --> Too few arguments to function App\Models\ModelDataDetail::insertDetail(), 2 passed in C:\xampp\htdocs\ci4project\app\Controllers\Add.php on line 117 and exactly 3 expected
+in APPPATH\Models\ModelDataDetail.php on line 22.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 03:58:17 --> syntax error, unexpected variable "$modelDataHeader", expecting ")"
+in APPPATH\Controllers\Add.php on line 117.
+ 1 SYSTEMPATH\Router\Router.php(512): CodeIgniter\Router\AutoRouter->getRoute('Add/insertData', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Add/insertData')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Add/insertData')
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:01:58 --> Undefined variable $data
+in APPPATH\Controllers\Add.php on line 117.
+ 1 APPPATH\Controllers\Add.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4project\\app\\Controllers\\Add.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:05:03 --> Undefined variable $data
+in APPPATH\Controllers\Add.php on line 117.
+ 1 APPPATH\Controllers\Add.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4project\\app\\Controllers\\Add.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:10:06 --> Undefined variable $ModelDataHeader
+in APPPATH\Controllers\Add.php on line 117.
+ 1 APPPATH\Controllers\Add.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ModelDataHeader', 'C:\\xampp\\htdocs\\ci4project\\app\\Controllers\\Add.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:29:45 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:31:50 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:33:59 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:35:11 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:37:20 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:38:33 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 04:48:43 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-20 07:50:59 --> Call to a member function insertHeader() on array
+in APPPATH\Models\ModelDataDetail.php on line 25.
+ 1 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-20 07:52:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DkmNo'.
+CRITICAL - 2023-11-20 07:52:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DkmNo'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","DkmNo","Item_Code","Remarks","PoQty","PoUnit","PoUnitPrice","Price","SubTot","UnitPriceADisc","Weight","kode_budget","FaktorPO","kodedept","Kategori","standarharga","hargamaster","Cek_berat","B_update","L_update","PoDate","PoNumber") VALUES (:PoNo:, :DkmNo:, :Item_Code:, :Remarks:, :PoQty:, :PoUnit:, :PoUnitPrice:, :Price:, :SubTot:, :UnitPriceADisc:, :Weight:, :kode_budget:, :FaktorPO:, :kodedept:, :Kategori:, :standarharga:, :hargamaster:, :Cek_berat:, :B_update:, :L_update:, :PoDate:, :PoNumber:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(77): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Models\ModelDataDetail.php(26): App\Models\ModelDataHeader->insertHeader('TWR', [...])
+ 4 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-20 08:33:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DkmNo'.
+CRITICAL - 2023-11-20 08:33:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DkmNo'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("PoNo","DkmNo","Item_Code","Remarks","PoQty","PoUnit","PoUnitPrice","Price","SubTot","UnitPriceADisc","Weight","kode_budget","FaktorPO","kodedept","Kategori","standarharga","hargamaster","Cek_berat","B_update","L_update","PoDate","PoNumber") VALUES (:PoNo:, :DkmNo:, :Item_Code:, :Remarks:, :PoQty:, :PoUnit:, :PoUnitPrice:, :Price:, :SubTot:, :UnitPriceADisc:, :Weight:, :kode_budget:, :FaktorPO:, :kodedept:, :Kategori:, :standarharga:, :hargamaster:, :Cek_berat:, :B_update:, :L_update:, :PoDate:, :PoNumber:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(77): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Models\ModelDataDetail.php(26): App\Models\ModelDataHeader->insertHeader('TWR', [...])
+ 4 APPPATH\Controllers\Add.php(117): App\Models\ModelDataDetail->insertDetail('TWR', [...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

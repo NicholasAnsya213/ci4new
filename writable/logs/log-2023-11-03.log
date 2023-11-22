@@ -1,0 +1,822 @@
+INFO - 2023-11-03 00:45:34 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-11-03 00:45:48 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-03 01:00:51 --> Unmatched '}'
+in APPPATH\Views\add_view.php on line 115.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-03 01:03:31 --> Unclosed '{' on line 44
+in APPPATH\Views\add_view.php on line 290.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-03 01:06:48 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(28): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-03 01:10:20 --> Undefined variable $vpo_detail
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo_detail', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:47:43 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:47:43 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:48:27 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:48:27 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:48:43 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:48:43 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+INFO - 2023-11-03 01:48:45 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+ERROR - 2023-11-03 01:49:05 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:49:05 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:49:23 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:49:23 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:49:53 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:49:53 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:50:39 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:50:39 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+INFO - 2023-11-03 01:54:23 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+ERROR - 2023-11-03 01:54:43 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:54:43 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 01:55:44 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 01:55:44 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 02:00:26 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 02:00:26 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 02:02:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 02:02:07 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 02:16:18 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 02:16:18 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 02:45:24 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 02:45:24 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 03:38:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 03:38:07 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Timeout error [258].  SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Unable to complete login process due to delay in prelogin response SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+INFO - 2023-11-03 06:57:32 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+CRITICAL - 2023-11-03 06:57:38 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-03 06:58:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-11-03 06:58:07 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(41): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -3, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

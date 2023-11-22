@@ -1,0 +1,253 @@
+CRITICAL - 2023-10-31 01:41:33 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 37.
+ 1 APPPATH\Views\add_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 01:51:17 --> Undefined variable $item
+in APPPATH\Views\add_view.php on line 47.
+ 1 APPPATH\Views\add_view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(28): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 01:57:43 --> Undefined property: stdClass::$PoDate
+in APPPATH\Views\add_view.php on line 43.
+ 1 APPPATH\Views\add_view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$PoDate', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(28): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 01:59:54 --> Undefined property: stdClass::$Delivery
+in APPPATH\Views\add_view.php on line 45.
+ 1 APPPATH\Views\add_view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Delivery', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(28): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 02:02:02 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 226508800 bytes)
+in APPPATH\Views\add_view.php on line 53.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-31 02:10:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Add.php(24): CodeIgniter\Model->__call('VpoDetail', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 02:10:32 --> Undefined variable $vpoDetail
+in APPPATH\Views\add_view.php on line 40.
+ 1 APPPATH\Views\add_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpoDetail', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 02:10:49 --> Undefined property: stdClass::$PoNumber
+in APPPATH\Views\add_view.php on line 46.
+ 1 APPPATH\Views\add_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$PoNumber', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 02:10:53 --> Undefined property: stdClass::$PoNumber
+in APPPATH\Views\add_view.php on line 46.
+ 1 APPPATH\Views\add_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$PoNumber', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-31 02:13:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendor_name'.
+CRITICAL - 2023-10-31 02:13:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'vendor_name'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(26): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+                        STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code + \' = \' + item_name + \' = \' + vendor_name
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM
+                FROM vpodetail p1
+                WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoNo BETWEEN \'23080000\' AND \'23089999\')
+                GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;
+                ')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-31 02:51:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-10-31 02:51:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(30): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+                        STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code + \' = \' + item_name + \' = \' + vendorname
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM
+                            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2
+                FROM vpodetail p1
+                WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoNo BETWEEN \'23080000\' AND \'23089999\')
+                GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;
+                ')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-31 02:51:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-10-31 02:51:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(30): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+                        STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code + \' = \' + item_name + \' = \' + vendorname
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM
+                            STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2
+                FROM vpodetail p1
+                WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoNo BETWEEN \'23080000\' AND \'23089999\')
+                GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;
+                ')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-10-31 03:10:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+CRITICAL - 2023-10-31 03:10:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'STUFF'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelViewData.php(34): CodeIgniter\Database\BaseConnection->query('SELECT DkmNo, PoDate, delivery, ShipmentTerms, PoNumber,
+                        STUFF((SELECT CHAR(13) + CHAR(10) + Item_Code
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+                        STUFF((SELECT CHAR(13) + CHAR(10) + item_name
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2
+                        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname
+                            FROM vpodetail p2
+                            WHERE p1.DkmNo = p2.DkmNo
+                            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3
+                FROM vpodetail p1
+                WHERE DkmNo IN (SELECT DkmNo FROM vpodetail WHERE PoNo BETWEEN \'23080000\' AND \'23089999\')
+                GROUP BY DkmNo, PoDate, delivery, ShipmentTerms, PoNumber;
+                ')
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 03:35:59 --> Unclosed '{' on line 43
+in APPPATH\Views\add_view.php on line 185.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 03:36:04 --> Unclosed '{' on line 43
+in APPPATH\Views\add_view.php on line 185.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(27): view('add_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+WARNING - 2023-10-31 04:35:23 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Models\ModelViewData.php on line 42.
+ 1 APPPATH\Models\ModelViewData.php(42): str_replace('&#x0D;', '', null)
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+WARNING - 2023-10-31 04:35:23 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Models\ModelViewData.php on line 42.
+ 1 APPPATH\Models\ModelViewData.php(42): str_replace('&#x0D;', '', null)
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+WARNING - 2023-10-31 04:35:23 --> [DEPRECATED] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Models\ModelViewData.php on line 42.
+ 1 APPPATH\Models\ModelViewData.php(42): str_replace('&#x0D;', '', null)
+ 2 APPPATH\Controllers\Add.php(23): App\Models\ModelViewData->viewVPO()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->VPO()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 05:07:24 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 43.
+ 1 APPPATH\Views\add_view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-10-31 05:09:06 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 43.
+ 1 APPPATH\Views\add_view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(15): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

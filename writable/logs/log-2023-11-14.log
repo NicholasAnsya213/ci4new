@@ -1,0 +1,191 @@
+INFO - 2023-11-14 01:38:47 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+INFO - 2023-11-14 01:38:58 --> REDIRECTED ROUTE at http://localhost:8080/%5CApp%5CControllers%5CHome::index
+ERROR - 2023-11-14 01:39:51 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(15): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-14 01:39:51 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -4, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+ 4 APPPATH\Controllers\Add.php(15): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-14 01:40:08 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(15): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-14 01:40:08 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -4, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+ 4 APPPATH\Controllers\Add.php(15): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-14 01:40:44 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,\r\n    ...')
+#3 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+#4 C:\xampp\htdocs\ci4project\app\Controllers\Add.php(15): App\Controllers\Add->VPO()
+#5 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-14 01:40:44 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ModelViewData.php(39): CodeIgniter\Database\BaseConnection->query('SELECT *,
+        STUFF((SELECT CHAR(13) + CHAR(10) + item_name + \' \' + \' (\'+ Item_Code +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM,
+        STUFF((SELECT CHAR(13) + CHAR(10) + category + \' \' + JenisItem
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM2,
+        STUFF((SELECT CHAR(13) + CHAR(10) + vendorname + \' \' + \' (\'+ vendorcode +\') \'
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM3,
+        STUFF((SELECT CHAR(13) + CHAR(10) + CAST(PoQty AS VARCHAR) + \' \' + CAST(PoUnit AS VARCHAR) + \' \' + \'*\' + \' \' + CAST(PoUnitPrice AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM4,
+        STUFF((SELECT CHAR(13) + CHAR(10) + MataUang + \' \' + CAST(SubTot AS VARCHAR)
+            FROM vpodetail p2
+            WHERE p1.DkmNo = p2.DkmNo
+            FOR XML PATH(\'\')), 1, 2, \'\') AS ITEM5
+        FROM vpodetail p1
+        WHERE PoDate >= DATEADD(MONTH, -4, getdate())
+        ORDER BY PoDate DESC;')
+ 3 APPPATH\Controllers\Add.php(39): App\Models\ModelViewData->viewVPO()
+ 4 APPPATH\Controllers\Add.php(15): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-14 01:41:22 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1 in C:\xampp\htdocs\ci4project\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\ci4project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4project\app\Views\welcome_message.php(225): CodeIgniter\Database\BaseConnection->query('select * from d...')
+#3 C:\xampp\htdocs\ci4project\system\View\View.php(226): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ci4project\system\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\ci4project\system\Common.php(1188): CodeIgniter\View\View->render('welcome_message', Array, true)
+#6 C:\xampp\htdocs\ci4project\app\Controllers\Home.php(9): view('welcome_message')
+#7 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ci4project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4project\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-14 01:41:22 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  SQLSTATE: 08001, code: -1
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: -1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Views\welcome_message.php(225): CodeIgniter\Database\BaseConnection->query('select * from dbo.tpodetail')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\welcome_message.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('welcome_message', [], true)
+ 6 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')

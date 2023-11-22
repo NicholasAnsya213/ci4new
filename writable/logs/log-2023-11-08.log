@@ -1,0 +1,454 @@
+CRITICAL - 2023-11-08 01:10:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelViewData.php(95): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Models\ModelViewData.php(110): App\Models\ModelViewData->generateUniquePoNo('your_department_code')
+ 5 APPPATH\Controllers\Add.php(60): App\Models\ModelViewData->insertHeader('your_department_code', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:11:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelViewData.php(95): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Models\ModelViewData.php(111): App\Models\ModelViewData->generateUniquePoNo('your_department_code')
+ 5 APPPATH\Controllers\Add.php(60): App\Models\ModelViewData->insertHeader('your_department_code', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:14:45 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(23): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(12): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:15:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The text data type cannot be selected as DISTINCT because it is not comparable.
+CRITICAL - 2023-11-08 01:15:59 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The text data type cannot be selected as DISTINCT because it is not comparable.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT *
+FROM "CBInv"."dbo"."tpoheader"
+WHERE MONTH(PoDate) = :MONTH(PoDate):
+AND YEAR(PoDate) = :YEAR(PoDate):', [...], false)
+ 2 APPPATH\Models\ModelViewData.php(87): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\Add.php(42): App\Models\ModelViewData->viewHeader()
+ 4 APPPATH\Controllers\Add.php(12): App\Controllers\Add->tpoheader()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:16:19 --> Undefined property: stdClass::$DkmNo
+in APPPATH\Views\add_view.php on line 46.
+ 1 APPPATH\Views\add_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DkmNo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(46): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(12): App\Controllers\Add->tpoheader()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:16:22 --> Undefined property: stdClass::$DkmNo
+in APPPATH\Views\add_view.php on line 46.
+ 1 APPPATH\Views\add_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$DkmNo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(46): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(12): App\Controllers\Add->tpoheader()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:16:45 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(23): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(12): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:17:18 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelViewData.php(94): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Models\ModelViewData.php(110): App\Models\ModelViewData->generateUniquePoNo('your_department_code')
+ 5 APPPATH\Controllers\Add.php(72): App\Models\ModelViewData->insertHeader('your_department_code', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:20:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ShipmetLoc'.
+CRITICAL - 2023-11-08 01:20:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ShipmetLoc'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmetLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmetLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:22:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:22:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:22:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:22:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(48): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:22:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:22:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(48): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:23:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:23:44 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:24:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:24:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:26:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:26:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 01:31:20 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(79): view('add_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:35:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:35:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:38:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:38:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(48): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 01:40:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 01:40:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(48): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(73): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:15:05 --> syntax error, unexpected token "echo"
+in APPPATH\Views\add_view.php on line 151.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 3 APPPATH\Controllers\Add.php(24): view('add_view', [...])
+ 4 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:15:26 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 150.
+ 1 APPPATH\Views\add_view.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 150)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(24): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:15:40 --> Undefined property: stdClass::$KodeDept
+in APPPATH\Views\add_view.php on line 151.
+ 1 APPPATH\Views\add_view.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$KodeDept', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 151)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(24): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:16:42 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 150.
+ 1 APPPATH\Views\add_view.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 150)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(24): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:19:54 --> Undefined variable $vpo
+in APPPATH\Views\add_view.php on line 44.
+ 1 APPPATH\Views\add_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vpo', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(54): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(14): App\Controllers\Add->tpoheader()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:20:31 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 150.
+ 1 APPPATH\Views\add_view.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 150)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(35): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:20:54 --> Undefined variable $tpoheader
+in APPPATH\Views\add_view.php on line 150.
+ 1 APPPATH\Views\add_view.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tpoheader', 'C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php', 150)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\ci4project\\app\\Views\\add_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('add_view', [], true)
+ 5 APPPATH\Controllers\Add.php(35): view('add_view', [...])
+ 6 APPPATH\Controllers\Add.php(13): App\Controllers\Add->VPO()
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:48:20 --> Call to undefined method App\Controllers\Add::tpodetetail()
+in APPPATH\Controllers\Add.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 02:50:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+CRITICAL - 2023-11-08 02:50:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PoDate'.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tpodetail"
+WHERE MONTH(PoDate) = :MONTH(PoDate):
+AND YEAR(PoDate) = :YEAR(PoDate):', [...], false)
+ 2 APPPATH\Models\ModelDataDetail.php(18): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\Add.php(40): App\Models\ModelDataDetail->viewDetail()
+ 4 APPPATH\Controllers\Add.php(16): App\Controllers\Add->TpoDetail()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 02:51:06 --> Memory limit of 50240 KB exceeded for buffered query
+CRITICAL - 2023-11-08 02:51:06 --> Memory limit of 50240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "CBInv"."dbo"."tpodetail"
+ORDER BY "PoNo" DESC', [], false)
+ 2 APPPATH\Models\ModelDataDetail.php(17): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 APPPATH\Controllers\Add.php(40): App\Models\ModelDataDetail->viewDetail()
+ 4 APPPATH\Controllers\Add.php(16): App\Controllers\Add->TpoDetail()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:53:36 --> Call to undefined method App\Models\ModelDataDetail::viewDetail
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(40): CodeIgniter\Model->__call('viewDetail', [])
+ 2 APPPATH\Controllers\Add.php(16): App\Controllers\Add->TpoDetail()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:55:48 --> Call to undefined method App\Models\ModelDataDetail::viewDetail
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(40): CodeIgniter\Model->__call('viewDetail', [])
+ 2 APPPATH\Controllers\Add.php(16): App\Controllers\Add->TpoDetail()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+CRITICAL - 2023-11-08 02:56:12 --> Call to undefined method App\Models\ModelDataDetail::viewDetail
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Add.php(40): CodeIgniter\Model->__call('viewDetail', [])
+ 2 APPPATH\Controllers\Add.php(16): App\Controllers\Add->tpodetail()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 02:59:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 02:59:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(48): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:04:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 03:04:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:05:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 03:05:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:06:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 03:06:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:07:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 03:07:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:14:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+CRITICAL - 2023-11-08 03:14:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_tpoheader'. Cannot insert duplicate key in object 'dbo.tpoheader'. The duplicate key value is (23110001, IT).
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(53): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('your_department_code', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
+ERROR - 2023-11-08 03:23:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated.
+CRITICAL - 2023-11-08 03:23:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CBInv"."dbo"."tpoheader" ("KodeDept","PoDate","VendorNo","ShipmentTerms","ShipmentLoc","PersonInCharge","TermsOfPayment","MataUang","Delivery","OrderedBy","CheckedBy","FinanceBy","ApprovedBy","KodeProd","PoNo") VALUES (:KodeDept:, :PoDate:, :VendorNo:, :ShipmentTerms:, :ShipmentLoc:, :PersonInCharge:, :TermsOfPayment:, :MataUang:, :Delivery:, :OrderedBy:, :CheckedBy:, :FinanceBy:, :ApprovedBy:, :KodeProd:, :PoNo:)', [...], false)
+ 2 APPPATH\Models\ModelDataHeader.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Add.php(78): App\Models\ModelDataHeader->insertHeader('TEST', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add->insertDataHeader()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4project\\public\\index.php')
