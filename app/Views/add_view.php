@@ -229,8 +229,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button type="submit" class="btn btn-primary" value="create">Submit</button>
-                                             </form>
+                                                
                                             </div>
                                         </div>
 
@@ -281,7 +280,8 @@
                                         </div>
 
                                         <script>
-                                        function updateItemData(selectElement) {
+                                        function updateItemData(selectElement)
+                                        {
                                             // Get the selected item data
                                             var selectedItem = selectElement.options[selectElement.selectedIndex].text;
                                             var selectedItemValue = selectElement.value;
@@ -292,7 +292,10 @@
 
                                             // Create a new row with input fields populated with item data
                                             var newRow = '<tr>';
-                                            newRow += '<td><input type="hidden" name="=Item_Code[]" value="' + itemCode + '">' + selectedItem + '</td>';
+                                            newRow += '<td>';
+                                            newRow += '<input type="hidden" name="Item_Code[]" value="' + itemCode + '">';
+                                            newRow += '<input type="text" value="' + selectedItem + '" readonly class="form-control-plaintext">';
+                                            newRow += '</td>';
                                             newRow += '<td><input type="hidden" name="Price[]" value="' + Price + '">' + Price + '</td>';
                                             newRow += '<td><input type="text" name="PoQty[]" oninput="calculateSubTotal(this)"></td>';
                                             newRow += '<td><span class="SubTot" name="SubTot">0.00</span></td>';
@@ -302,6 +305,7 @@
                                             // Append the new row to the table body
                                             document.getElementById('itemTable').getElementsByTagName('tbody')[0].innerHTML += newRow;
                                         }
+
 
                                         function calculateSubTotal(inputElement) {
                                             // Get the parent row of the input field
@@ -324,17 +328,61 @@
                                             var row = button.parentNode.parentNode;
                                             row.parentNode.removeChild(row);
                                         }
+
+                                        document.getElementById('orderForm').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent the form from submitting normally
+
+                                            // Convert table data to JSON
+                                            var tableData = tableToJSON(document.getElementById('itemTable'));
+
+                                            // Append the JSON data to a hidden input field in the form
+                                            var hiddenInput = document.createElement('input');
+                                            hiddenInput.type = 'hidden';
+                                            hiddenInput.name = 'orderDetails';
+                                            hiddenInput.value = JSON.stringify(tableData);
+                                            this.appendChild(hiddenInput);
+
+                                            // Submit the form
+                                            this.submit();
+                                        });
+
+                                        function tableToJSON(table) 
+                                        {
+                                            var data = [];
+                                            var itemCodes = []; // New array to store Item_Code values
+
+                                            for (var i = 1; i < table.rows.length; i++) {
+                                                var row = table.rows[i];
+                                                var itemCode = row.cells[0].querySelector('input[name="Item_Code[]"]').value;
+
+                                                // Populate the itemCodes array
+                                                itemCodes.push(itemCode);
+
+                                                var rowData = {
+                                                    itemCode: itemCode,
+                                                    itemName: row.cells[0].querySelector('input[readonly]').value,
+                                                    price: parseFloat(row.cells[1].querySelector('input[name="Price[]"]').value),
+                                                    quantity: parseFloat(row.cells[2].querySelector('input[name="PoQty[]"]').value),
+                                                    subTotal: parseFloat(row.cells[3].querySelector('.SubTot').textContent)
+                                                };
+                                                data.push(rowData);
+                                            }
+
+                                            // Now itemCodes array contains all the Item_Code values from the table
+                                            console.log(itemCodes);
+
+                                            return data;
+                                        }
+
                                         </script>
-
-
                                 </div>
                                 <div class="modal-footer">
                                 </div>
-
+<button type="submit" class="btn btn-primary" value="create">Submit</button>
+                                             </form>
                             </div>
                         </div>
                     </div>
-
                     <script>
                         // Open the outer modal
                         $('#outerModal').modal('show');

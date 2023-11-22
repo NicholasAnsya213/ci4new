@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ModelViewData;
 use App\Models\ModelDataHeader;
 use App\Models\ModelDataDetail;
+use App\Models\ModelDataInsert;
 use App\Models\ModelGoods;
 
 
@@ -62,16 +63,17 @@ class Add extends BaseController
         echo view('insert_form');
     }
 
-    public function insertData($PoNo, $PoNumber, $kodedept, $data)
-    {
-        $ModelDataHeader = new ModelDataHeader();
-        $modelDetail = new ModelDataDetail();
+public function insertData()
+{
+    $modelHeader = new ModelDataInsert();
+    $modelDetail = new ModelDataInsert();
 
+    try {
         $KodeDept = $this->request->getPost('KodeDept');
-        $kodedept = $KodeDept;
 
+        // Header data
         $headerData = [
-            'KodeDept' => $kodedept,
+            'KodeDept' => $KodeDept,
             'PoDate' => $this->request->getPost('PoDate'),
             'VendorNo' => $this->request->getPost('VendorNo'),
             'ShipmentTerms' => $this->request->getPost('ShipmentTerms'),
@@ -89,7 +91,7 @@ class Add extends BaseController
 
         $detailData = [
             'PoNo' => $this->request->getPost('PoNo'),
-            'DkmNo' => $this->request->getPost('DkmNo'),
+            'DkmNo' => $this->request->getPost('PoNumber'),
             'Item_Code' => $this->request->getPost('Item_Code'),
             'Remarks' => $this->request->getPost('Remarks'),
             'PoQty' => $this->request->getPost('PoQty'),
@@ -101,7 +103,7 @@ class Add extends BaseController
             'Weight' => $this->request->getPost('Weight'),
             'kode_budget' => $this->request->getPost('kode_budget'),
             'FaktorPO' => $this->request->getPost('FaktorPO'),
-            'kodedept' => $this->request->getPost('kodedept'),
+            'kodedept' => $KodeDept,
             'Kategori' => $this->request->getPost('Kategori'),
             'standarharga' => $this->request->getPost('standarharga'),
             'hargamaster' => $this->request->getPost('hargamaster'),
@@ -110,41 +112,29 @@ class Add extends BaseController
             'L_update' => $this->request->getPost('L_update'),
         ];
 
-        try {
-            // Insert into header table
-            $insertedHeaderId = $ModelDataHeader->insertHeader($KodeDept, $headerData);
+        // Insert into header table
+        $headerResult = $modelHeader->insertData($KodeDept, $headerData);
+
+        // If the header insertion is successful, proceed with the detail insertion
+        if ($headerResult['insertedId']) {
+            // Update the PoNo in detailData using the generated PoNo from the header
+            $detailData['PoNo'] = $headerResult['PoNo'];
+            $detailData['PoNumber'] = $headerResult['PoNumber'];
 
             // Insert into detail table
-            $insertedDetailId = $modelDetail->insertDetail($KodeDept, $detailData, $ModelDataHeader);
-
+            $detailResult = $modelDetail->insertData($KodeDept, $detailData);
 
             // Additional logic can go here if needed
 
-            echo "Data inserted with Header ID: " . $insertedHeaderId . " and Detail ID: " . $insertedDetailId;
-        } catch (\Exception $e) {
-            echo "Failed to insert data! Error: " . $e->getMessage();
-        }
-
-        $KodeDept = $this->request->getPost('KodeDept');
-        $data = [
-            'Item_Code' => $this->request->getPost('Item_Code'),
-            ''
-        ];
-    
-        $insertedData = $modelDetail->insertDetail($KodeDept, $data, $ModelDataHeader);
-        
-        if ($insertedData) {
-            $data['activeMenu'] = 'Add';
-            echo view('partial/header', $data);
-            echo view('add_view', $data);
-            echo view('partial/footer', $data);
-            echo "Data inserted with ID: " . $insertedData['insertedId'];
+            echo "Data inserted with Header ID: " . $headerResult['insertedId'] . " and Detail ID: " . $detailResult['insertedId'];
         } else {
             echo "Failed to insert data!";
         }
-
+    } catch (\Exception $e) {
+        echo "Failed to insert data! Error: " . $e->getMessage();
     }
+}
 
 
-    
+
 }

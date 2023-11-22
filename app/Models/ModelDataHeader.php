@@ -92,6 +92,8 @@ class ModelDataHeader extends Model {
         $insertedId = $this->db->insertID();
 
         $uniquePoNumber =  $data['DkmNo'];
+        unset($data['PoDate']);
+
 
         $this->db->table($this->tableDetail)->insert($data);
         $insertedId = $this->db->insertID();
