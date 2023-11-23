@@ -135,7 +135,85 @@ public function insertData()
     }
 }
 
+public function Add()
+{
+    $modelHeader = new ModelDataInsert();
+    $modelDetail = new ModelDataInsert();
+    
+    $this->form_validation->set_rules('PoDate', $this->lang->line("PoDate"), 'required');
+
+    
+    if ($this->form_validation->run()==true){
+       $pono ="";
+       $ponumber = "";
+        ///
+           $i = sizeof($_POST[selectedItems]);
+           
+            for ($r=0, $r<$i; $r++){
+                    $itemcode = $_POST['selectedItems'][$r];
+
+
+              $detailData[] = array(
+                        'Item_Code' => $itemcode,
+                       'pono' => $pono,
+                       'ponumber' => $ponumber
+                        
+                   
+                    )                 
+                }
+    }
+    
+    if ($this->form_validation->run()==true){
+       $headerData = [
+            'pono' => $pono,
+             'ponumber' => $ponumber,
+            'KodeDept' => $KodeDept,
+            'PoDate' => $this->request->getPost('PoDate'),
+            'VendorNo' => $this->request->getPost('VendorNo'),
+            'ShipmentTerms' => $this->request->getPost('ShipmentTerms'),
+            'ShipmentLoc' => $this->request->getPost('ShipmentLoc'),
+            'PersonInCharge' => $this->request->getPost('PersonInCharge'),
+            'TermsOfPayment' => $this->request->getPost('TermsOfPayment'),
+            'MataUang' => $this->request->getPost('MataUang'),
+            'Delivery' => $this->request->getPost('Delivery'),
+            'OrderedBy' => $this->request->getPost('OrderedBy'),
+            'CheckedBy' => $this->request->getPost('CheckedBy'),
+            'FinanceBy' => $this->request->getPost('FinanceBy'),
+            'ApprovedBy' => $this->request->getPost('ApprovedBy'),
+            'KodeProd' => $this->request->getPost('KodeProd'),
+        ];
+    }
+
+    if ($this->form_validation->run() == true && $this->SPK_MODEL->add_data($headerData, $detailData)) {
+           // menampilkan sukses
+           // $this->session->set_userdata('remove_pols', 1);
+           // $this->session->set_flashdata('message', $this->lang->line("spk add"));
+           // redirect('');
+        } else {
+               //menampilkan posisi inputan
+
+        // redirect('krinputan semula kasih alert');
+    }
+
+    /*
+    public fucntion add_data ($Headerdata,$detaildata){
+
+    
+   if   ( $this->db->insert('poheader', $Headerdata)) {
+    
+    foreach ($detaildata as dataitem){
+            $this->db->insert('podetail', dataitem);   
+        }
+     }
+  }
+
+    */
+
+
+    
+}
 
 
 
+    
 }
