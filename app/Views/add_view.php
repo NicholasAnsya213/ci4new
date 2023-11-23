@@ -243,30 +243,68 @@
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="inputGroupSelect01">Items</label>
                                         </div>
-                                        <select class="custom-select" id="inputGroupSelect01" onchange="updateItemData(this)">
-                                            <option selected>Choose...</option>
-                                            <?php foreach($tbarang as $item) {?>
-                                                <option value="<?php echo $item->item_code . '|' . $item->price; ?>">
-                                                    <?php echo $item->item_name; ?>
-                                                </option>
-                                            <?php }?>
-                                        </select>
-
-                                        </div>
+                                        <!-- Assuming $tbarang is an array of items -->
+                                            <div>
+                                                <select class="custom-select item-selector" id="selectedItems_" onchange="addTableRow(this)">
+                                                <option selected disabled>Choose...</option>
+                                                <?php foreach ($tbarang as $item) { ?>
+                                                    <option value="<?php echo $item->item_code . '|' . $item->item_name . '|' . $item->price . '|' . $item->category; ?>">
+                                                        <?php echo $item->item_name ?>
+                                                    </option>
+                                                <?php } ?>
+                                                </select>
+                                            </div>
                                             <table class="table table-bordered table-hover" id="itemTable">
                                                 <thead>
-                                                <tr>
-                                                    <th scope="col">Item</th>
-                                                    <th scope="col">Price</th>
-                                                    <th scope="col">Quantity</th>
-                                                    <th scope="col">Sub Total</th>
-                                                    <th scope="col">Actions</th>
-                                                </tr>
+                                                    <tr>
+                                                        <th scope="col">Item Code</th>
+                                                        <th scope="col">Item Name</th>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">Category</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
                                                 </thead>
-                                                <tbody>
-                                                <!-- Rows for selected items will be dynamically added here -->
+                                                <tbody id="tableBody">
+                                                    <!-- Table rows will be dynamically added here -->
                                                 </tbody>
                                             </table>
+                                        <script>
+                                            function addTableRow(selectElement) {
+                                                var selectedValue = selectElement.value;
+                                                if (selectedValue) {
+                                                    var values = selectedValue.split('|');
+                                                    var itemCode = values[0];
+                                                    var itemName = values[1];
+                                                    var Price = values[2];
+                                                    var Category = values[3];
+
+                                                    var tableBody = document.getElementById('tableBody');
+                                                    var newRow = tableBody.insertRow();
+                                                    var cell1 = newRow.insertCell(0);
+                                                    var cell2 = newRow.insertCell(1);
+                                                    var cell3 = newRow.insertCell(2);
+                                                    var cell4 = newRow.insertCell(3);
+                                                        cell1.innerHTML = '<input type="text" name="selectedItems[]" value="' + itemCode + '" readonly>';
+                                                        cell2.innerHTML = values[1];
+                                                        cell3.innerHTML = values[2];
+                                                        cell4.innerHTML = values[3];
+
+                                                // Add a delete button to the new row
+                                                    var deleteButton = document.createElement("button");
+                                                    deleteButton.className = "btn btn-danger";
+                                                    deleteButton.innerHTML = "Delete";
+                                                    deleteButton.onclick = function () {
+                                                        deleteRow(newRow);
+                                                    };
+                                                    newRow.appendChild(deleteButton);
+                                                }
+                                            }
+
+                                            function deleteRow(row) {
+                                                var tableBody = document.getElementById('tableBody');
+                                                tableBody.removeChild(row);
+                                            }
+                                        </script>
                                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom:20px; margin-top:20px;">Transaction Detail</button>
                                                     <div class="collapse" id="collapseExample">
                                                         <div class="col">
@@ -278,108 +316,11 @@
                                                     </div>
                                         </div>
                                         </div>
-
-                                        <script>
-                                        function updateItemData(selectElement)
-                                        {
-                                            // Get the selected item data
-                                            var selectedItem = selectElement.options[selectElement.selectedIndex].text;
-                                            var selectedItemValue = selectElement.value;
-
-                                            var values = selectedItemValue.split('|');
-                                            var itemCode = values[0];
-                                            var Price = parseFloat(values[1]); // Convert Price to a floating-point number
-
-                                            // Create a new row with input fields populated with item data
-                                            var newRow = '<tr>';
-                                            newRow += '<td>';
-                                            newRow += '<input type="hidden" name="Item_Code[]" value="' + itemCode + '">';
-                                            newRow += '<input type="text" value="' + selectedItem + '" readonly class="form-control-plaintext">';
-                                            newRow += '</td>';
-                                            newRow += '<td><input type="hidden" name="Price[]" value="' + Price + '">' + Price + '</td>';
-                                            newRow += '<td><input type="text" name="PoQty[]" oninput="calculateSubTotal(this)"></td>';
-                                            newRow += '<td><span class="SubTot" name="SubTot">0.00</span></td>';
-                                            newRow += '<td><button type="button" class="btn btn-danger" onclick="deleteRow(this)">Delete</button></td>';
-                                            newRow += '</tr>';
-
-                                            // Append the new row to the table body
-                                            document.getElementById('itemTable').getElementsByTagName('tbody')[0].innerHTML += newRow;
-                                        }
-
-
-                                        function calculateSubTotal(inputElement) {
-                                            // Get the parent row of the input field
-                                            var row = inputElement.closest('tr');
-
-                                            // Get the PoQty and Price values
-                                            var PoQty = parseFloat(inputElement.value);
-                                            var Price = parseFloat(row.querySelector('input[name="Price[]"]').value);
-
-                                            // Calculate the subtotal
-                                            var subTotal = isNaN(PoQty) || isNaN(Price) ? 0 : PoQty * Price;
-
-                                            // Update the subtotal display in the same row
-                                            row.querySelector('.SubTot').textContent = subTotal.toFixed(2); // Display the subtotal with two decimal places
-                                        }
-
-
-                                        function deleteRow(button) {
-                                            // Delete the corresponding row when the delete button is clicked
-                                            var row = button.parentNode.parentNode;
-                                            row.parentNode.removeChild(row);
-                                        }
-
-                                        document.getElementById('orderForm').addEventListener('submit', function(event) {
-                                            event.preventDefault(); // Prevent the form from submitting normally
-
-                                            // Convert table data to JSON
-                                            var tableData = tableToJSON(document.getElementById('itemTable'));
-
-                                            // Append the JSON data to a hidden input field in the form
-                                            var hiddenInput = document.createElement('input');
-                                            hiddenInput.type = 'hidden';
-                                            hiddenInput.name = 'orderDetails';
-                                            hiddenInput.value = JSON.stringify(tableData);
-                                            this.appendChild(hiddenInput);
-
-                                            // Submit the form
-                                            this.submit();
-                                        });
-
-                                        function tableToJSON(table) 
-                                        {
-                                            var data = [];
-                                            var itemCodes = []; // New array to store Item_Code values
-
-                                            for (var i = 1; i < table.rows.length; i++) {
-                                                var row = table.rows[i];
-                                                var itemCode = row.cells[0].querySelector('input[name="Item_Code[]"]').value;
-
-                                                // Populate the itemCodes array
-                                                itemCodes.push(itemCode);
-
-                                                var rowData = {
-                                                    itemCode: itemCode,
-                                                    itemName: row.cells[0].querySelector('input[readonly]').value,
-                                                    price: parseFloat(row.cells[1].querySelector('input[name="Price[]"]').value),
-                                                    quantity: parseFloat(row.cells[2].querySelector('input[name="PoQty[]"]').value),
-                                                    subTotal: parseFloat(row.cells[3].querySelector('.SubTot').textContent)
-                                                };
-                                                data.push(rowData);
-                                            }
-
-                                            // Now itemCodes array contains all the Item_Code values from the table
-                                            console.log(itemCodes);
-
-                                            return data;
-                                        }
-
-                                        </script>
                                 </div>
                                 <div class="modal-footer">
                                 </div>
-<button type="submit" class="btn btn-primary" value="create">Submit</button>
-                                             </form>
+                                <button type="submit" class="btn btn-primary" value="create">Submit</button>
+                                </form>
                             </div>
                         </div>
                     </div>
