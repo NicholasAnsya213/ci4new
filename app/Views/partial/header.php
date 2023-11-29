@@ -15,6 +15,9 @@
   <!-- Bootstrap 5 Datatables CSS -->
   <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
   <link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse">
 <div class="wrapper">
@@ -164,7 +167,7 @@
               </li>
               
               <li class="nav-item <?php if (in_array($activeMenu, ['Add'])) {echo "menu-open";} ?>">
-                <a href="<?php echo site_url('Add')?>" class="nav-link <?php if($activeMenu == 'Add')  ?>">
+                <a href="<?php echo site_url('Add_Spk')?>" class="nav-link <?php if($activeMenu == 'Add')  ?>">
                   <i><ion-icon name="add-circle-outline"></ion-icon></i>
                   <p style="margin: 5px;">Add</p>
                 </a>
@@ -182,13 +185,13 @@
                     <li class="nav-item <?php if (in_array($activeMenu, ['PreOrder'])) {echo "menu-open";} ?>">
                       <a href="<?php echo site_url('PreOrder')?>" class="nav-link <?php if($activeMenu == 'PreOrder')  ?>">
                         <i><ion-icon name="file-tray-full-outline"></ion-icon></i>
-                        <p style="margin: 5px;">Pre Order Status</p>
+                        <p style="margin: 5px;">Work Order Status</p>
                       </a>
                     </li>
-                    <li class="nav-item <?php if (in_array($activeMenu, ['Goods'])) {echo "menu-open";} ?>">
-                      <a href="<?php echo site_url('Goods')?>" class="nav-link <?php if($activeMenu == 'Goods')  ?>">
+                    <li class="nav-item <?php if (in_array($activeMenu, ['Goods_Spk'])) {echo "menu-open";} ?>">
+                      <a href="<?php echo site_url('Goods_Spk')?>" class="nav-link <?php if($activeMenu == 'Goods_Spk')  ?>">
                         <i><ion-icon name="server-outline"></ion-icon></i>
-                        <p style="margin: 5px;">Goods Available</p>
+                        <p style="margin: 5px;">Service Available</p>
                       </a>
                     </li>
                   </ul>

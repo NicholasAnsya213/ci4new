@@ -114,7 +114,7 @@ class ModelDataInsert extends Model {
     }
     
 
-    public function insertData($KodeDept, $data)
+    public function insertDataHeader($KodeDept, $data)
     {
         $uniquePoNo = $this->generateUniquePoNo($KodeDept);
         $uniquePoNumber = $this->generateUniquePoNumber($KodeDept);
@@ -128,37 +128,46 @@ class ModelDataInsert extends Model {
         $this->db->table($this->tableHeader)->insert($data);
         $headerInsertedId = $this->db->insertID();
 
-        unset($data['PoNumber']);
-        unset($data['PoDate']);
-        unset($data['PoDate']);
-        unset($data['VendorNo']);
-        unset($data['ShipmentTerms']);
-        unset($data['ShipmentLoc']);
-        unset($data['PersonInCharge']);
-        unset($data['TermsOfPayment']);
-        unset($data['MataUang']);
-        unset($data['Delivery']);
-        unset($data['OrderedBy']);
-        unset($data['CheckedBy']);
-        unset($data['FinanceBy']);
-        unset($data['ApprovedBy']);
-        unset($data['KodeProd']);
+        // $data['DkmNo'] = $uniqueDkmNo;
 
-        $data['DkmNo'] = $uniqueDkmNo;
-
-        // Insert into detail table
-        $this->db->table($this->tableDetail)->insert($data);
-        $detailInsertedId = $this->db->insertID();
+        // // Insert into detail table
+        // $this->db->table($this->tableDetail)->insert($data);
+        // $detailInsertedId = $this->db->insertID();
     
         // Return the unique values along with the insert IDs
         return [
             'headerInsertedId' => $headerInsertedId,
-            'detailInsertedId' => $detailInsertedId,
+           /* 'detailInsertedId' => $detailInsertedId, */
             'PoNo' => $uniquePoNo,
             'PoNumber' => $uniquePoNumber,
         ];
     }
-    
 
+    public function insertDataDetail($PoNo, $PoNumber, $KodeDept, $data)
+    {
+        // Insert into header table
+        $this->db->table($this->tableDetail)->insert($data);
+        $DetailInsertedId = $this->db->insertID();
+
+        // $data['DkmNo'] = $uniqueDkmNo;
+
+        // // Insert into detail table
+        // $this->db->table($this->tableDetail)->insert($data);
+        // $detailInsertedId = $this->db->insertID();
+    
+    }
+    
+/*    public function add_data($Headerdata,$detaildata){
+
+    
+   if ( $this->db->insert('poheader', $Headerdata)) {
+    
+    foreach ($detaildata as dataitem){
+            $this->db->insert('podetail', dataitem);   
+        }
+     }
+  }
+
+*/
 }
 

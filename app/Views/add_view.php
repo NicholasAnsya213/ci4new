@@ -25,7 +25,7 @@
                 <div class="card-header p-3 mb-2 bg-white text-dark">
                     <div class="card-title" style="margin-top:5px;">Purchase Order Data
                     </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#outerModal" style="float: right; ">New Purchase Order + </button>
+                    <a type="button" href="/Add/NewPurchaseOrder" class="btn btn-flat btn-primary" style="float: right; ">New Purchase Order + </a>
                 </div>
                 <div class="card-body">
 
@@ -83,12 +83,12 @@
                                 </div>
                             </div>
 
-                        <button class="btn btn-warning dropdown-items" type="button" data-toggle="modal" data-target="#updateModal_<?php echo $item->PoNumber; ?>" style="float: right; margin-left:5px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-up" viewBox="0 0 16 16">
-                            <path d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707z"/>
-                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-                            </svg>
-                            Update
+                            <button class="btn btn-warning dropdown-items" type="button" data-toggle="modal" data-target="#updateModal_<?php echo $item->PoNumber; ?>" style="float: right; margin-left:5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-up" viewBox="0 0 16 16">
+                                <path d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707z"/>
+                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                </svg>
+                                Update
                             </button>
 
                             <div class="modal fade" id="updateModal_<?php echo $item->PoNumber; ?>" tabindex="-1" role="dialog" aria-labelledby="updateModalTitle" aria-hidden="true">
@@ -229,17 +229,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
                                         </div>
-
                                         <div class="card">
                                         <div class="card-header text-white bg-dark">
                                             <h4>Order Detail</h4>
                                         </div>
                                         <div class="card-body">
                                             <!-- insert_form.php -->
-                                            <div class="input-group mb-3">
+                                            <div class="input-group mb-3" >
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="inputGroupSelect01">Items</label>
                                         </div>
@@ -253,6 +251,7 @@
                                                     </option>
                                                 <?php } ?>
                                                 </select>
+                                            </div>
                                             </div>
                                             <table class="table table-bordered table-hover" id="itemTable">
                                                 <thead>
@@ -314,7 +313,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                        </div>
                                         </div>
                                 </div>
                                 <div class="modal-footer">

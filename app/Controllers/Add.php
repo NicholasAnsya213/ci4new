@@ -28,9 +28,30 @@ class Add extends BaseController
 ];
 
     echo view('partial/header', $data);
-    echo view('add_view', $data);
+    echo view('/add_view', $data);
     echo view('partial/footer', $data);
 }
+
+    public function NewPurchaseOrder()
+    {
+        $vpoData = $this->VPO();
+        $tpoheaderData = $this->tpoheader();
+        $tpodetailData = $this->tpodetail();
+        $tbarangData = $this->tbarang();
+    
+        $data = [
+            'vpo' => $vpoData,
+            'tpoheader' => $tpoheaderData,
+            'tpodetail' => $tpodetailData,
+            'tbarang' => $tbarangData,
+            'activeMenu' => 'Add'
+    
+    ];
+    
+        echo view('partial/header', $data);
+        echo view('/purchase_orders/manage_po', $data);
+        echo view('partial/footer', $data);
+    }
 
 
 // Controller function to retrieve data for DataTable
@@ -113,7 +134,7 @@ public function insertData()
         ];
 
         // Insert into header table
-        $headerResult = $modelHeader->insertData($KodeDept, $headerData);
+        $headerResult = $modelHeader->insertDataHeader($KodeDept, $headerData);
 
         // If the header insertion is successful, proceed with the detail insertion
         if ($headerResult['insertedId']) {
@@ -121,8 +142,8 @@ public function insertData()
             $detailData['PoNo'] = $headerResult['PoNo'];
             $detailData['PoNumber'] = $headerResult['PoNumber'];
 
-            // Insert into detail table
-            $detailResult = $modelDetail->insertData($KodeDept, $detailData);
+        // Insert into detail table
+        $detailResult = $modelDetail->insertDataDetail($KodeDept, $detailData);
 
             // Additional logic can go here if needed
 
@@ -135,84 +156,68 @@ public function insertData()
     }
 }
 
-public function Add()
-{
-    $modelHeader = new ModelDataInsert();
-    $modelDetail = new ModelDataInsert();
-    
-    $this->form_validation->set_rules('PoDate', $this->lang->line("PoDate"), 'required');
+/*        public function Add()
+        {
+            $modelHeader = new ModelDataInsert();
+            $modelDetail = new ModelDataInsert();
+            
+            $this->form_validation->set_rules('PoDate', $this->lang->line("PoDate"), 'required');
 
-    
-    if ($this->form_validation->run()==true){
-       $pono ="";
-       $ponumber = "";
-        ///
-           $i = sizeof($_POST[selectedItems]);
-           
-            for ($r=0, $r<$i; $r++){
-                    $itemcode = $_POST['selectedItems'][$r];
+            
+            if ($this->form_validation->run()==true){
+            $pono ="";
+            $ponumber = "";
+                ///
+                $i = sizeof($_POST[selectedItems]);
+                
+                    for ($r=0, $r<$i; $r++){
+                            $itemcode = $_POST['selectedItems'][$r];
 
 
-              $detailData[] = array(
-                        'Item_Code' => $itemcode,
-                       'pono' => $pono,
-                       'ponumber' => $ponumber
+                    $detailData[] = array(
+                            'Item_Code' => $itemcode,
+                            'pono' => $pono,
+                            'ponumber' => $ponumber
+                                
                         
-                   
-                    )                 
-                }
-    }
-    
-    if ($this->form_validation->run()==true){
-       $headerData = [
-            'pono' => $pono,
-             'ponumber' => $ponumber,
-            'KodeDept' => $KodeDept,
-            'PoDate' => $this->request->getPost('PoDate'),
-            'VendorNo' => $this->request->getPost('VendorNo'),
-            'ShipmentTerms' => $this->request->getPost('ShipmentTerms'),
-            'ShipmentLoc' => $this->request->getPost('ShipmentLoc'),
-            'PersonInCharge' => $this->request->getPost('PersonInCharge'),
-            'TermsOfPayment' => $this->request->getPost('TermsOfPayment'),
-            'MataUang' => $this->request->getPost('MataUang'),
-            'Delivery' => $this->request->getPost('Delivery'),
-            'OrderedBy' => $this->request->getPost('OrderedBy'),
-            'CheckedBy' => $this->request->getPost('CheckedBy'),
-            'FinanceBy' => $this->request->getPost('FinanceBy'),
-            'ApprovedBy' => $this->request->getPost('ApprovedBy'),
-            'KodeProd' => $this->request->getPost('KodeProd'),
-        ];
-    }
+                            )                 
+                        }
+            }
+            
+            if ($this->form_validation->run()==true){
+            $headerData = [
+                    'pono' => $pono,
+                    'ponumber' => $ponumber,
+                    'KodeDept' => $KodeDept,
+                    'PoDate' => $this->request->getPost('PoDate'),
+                    'VendorNo' => $this->request->getPost('VendorNo'),
+                    'ShipmentTerms' => $this->request->getPost('ShipmentTerms'),
+                    'ShipmentLoc' => $this->request->getPost('ShipmentLoc'),
+                    'PersonInCharge' => $this->request->getPost('PersonInCharge'),
+                    'TermsOfPayment' => $this->request->getPost('TermsOfPayment'),
+                    'MataUang' => $this->request->getPost('MataUang'),
+                    'Delivery' => $this->request->getPost('Delivery'),
+                    'OrderedBy' => $this->request->getPost('OrderedBy'),
+                    'CheckedBy' => $this->request->getPost('CheckedBy'),
+                    'FinanceBy' => $this->request->getPost('FinanceBy'),
+                    'ApprovedBy' => $this->request->getPost('ApprovedBy'),
+                    'KodeProd' => $this->request->getPost('KodeProd'),
+                ];
+            }
 
-    if ($this->form_validation->run() == true && $this->SPK_MODEL->add_data($headerData, $detailData)) {
-           // menampilkan sukses
-           // $this->session->set_userdata('remove_pols', 1);
-           // $this->session->set_flashdata('message', $this->lang->line("spk add"));
-           // redirect('');
-        } else {
-               //menampilkan posisi inputan
+            if ($this->form_validation->run() == true && $this->SPK_MODEL->add_data($headerData, $detailData)) {
+                // menampilkan sukses
+                // $this->session->set_userdata('remove_pols', 1);
+                // $this->session->set_flashdata('message', $this->lang->line("spk add"));
+                // redirect('');
+                } else {
+                    //menampilkan posisi inputan
 
-        // redirect('krinputan semula kasih alert');
-    }
+                // redirect('krinputan semula kasih alert');
+            }
 
-    /*
-    public fucntion add_data ($Headerdata,$detaildata){
-
-    
-   if   ( $this->db->insert('poheader', $Headerdata)) {
-    
-    foreach ($detaildata as dataitem){
-            $this->db->insert('podetail', dataitem);   
         }
-     }
-  }
-
-    */
-
-
-    
-}
-
+*/
 
 
     
