@@ -52,7 +52,7 @@
 		<h3 class="card-title"><?php echo isset($id) ? "Update Purchase Order Details": "New Purchase Order" ?> </h3>
 	</div>
 	<div class="card-body">
-		<form action="" id="po-form">
+		<form action="<?= base_url('Add_Spk/insert_Data')?>" id="po-form">
 			<input type="hidden" name ="id" value="<?php echo isset($id) ? $id : '' ?>">
 			<div class="row">
 				<div class="col-md-4 form-group">

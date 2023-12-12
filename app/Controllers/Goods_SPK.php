@@ -3,22 +3,30 @@
 namespace App\Controllers;
 
 use App\Models\ModelGoods;
-use App\Models\ModelAdd;
 
 class Goods_SPK extends BaseController
 {
     public function index()
     {   
-        $data['activeMenu'] = 'Goods';
+        $barang = $this->viewBarang();
 
-        $results = new \App\Models\ModelGoods();
-        $data['results'] = $results
-        ->WHERE('category =', 'JASA')
-        ->findAll();
+        $data= [
+            'tbarang' => $barang,
+            'activeMenu' => 'Goods_SPK'
+        ];
+
         echo view('partial/header', $data);
-        echo view('goods_viewSPK', $data);
-        echo view('partial/footer');
+        echo view('/work_orders/goods_viewSPK', $data);
+        echo view('partial/footer', $data);
     }
+
+    public function viewBarang(){
+
+        $model = new ModelGoods();
+        return $model->viewItems();
+    }
+
+
     public function performSearch()
     {
 

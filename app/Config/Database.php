@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'GLV_Server\MSSQLSERVER2014',
-        'username'     => 'user',
-        'password'     => 'p@ssw0rd',
-        'database'     => 'CBInv',
+        'hostname'     => 'LEGION-5\SQLEXPRESS5',
+        'username'     => '',
+        'password'     => '',
+        'database'     => 'master',
         'DBDriver'     => 'sqlsrv',
         'DBPrefix'     => '',
         'pConnect'     => true,

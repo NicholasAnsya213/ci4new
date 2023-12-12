@@ -1,22 +1,3 @@
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Work Order</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Work Order</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -152,7 +133,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <!-- insert_form.php -->
-                                                <form method="post" action="<?= base_url('Add/insertData') ?>">
+                                                <form method="post" action="<?= base_url('Add/insert_Data') ?>">
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <div class="form-group">

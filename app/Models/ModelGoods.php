@@ -12,7 +12,7 @@ class ModelGoods extends Model
     public function viewItems()
     {
         $query = $this->db->table($this->table)
-                        ->limit(10) // Added limit to get only top 10 results
+                        ->limit(100)
                         ->get()
                         ->getResult();
 

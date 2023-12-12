@@ -35,6 +35,18 @@ class ModelInsertSpk extends Model {
         return $query;
     }
 
+    public function searchDetail($searchDkmNo) {
+        $query = $this->db->table($this->tableDetail)
+            ->select('*')
+            ->like('DkmNo', $searchDkmNo)
+            ->orderBy('PoNo', 'DESC')
+            ->get()
+            ->getResult();
+    
+        return $query;
+    }
+    
+
     public function generateUniquePoNo($KodeDept) {
         // Get the current year and month
         $currentYear = date('y');
@@ -90,7 +102,7 @@ class ModelInsertSpk extends Model {
         $currentMonth = date('m');
     
         // Build the base string (R.KodeDept/YY/MM/)
-        $uniqueIdentifier = "R.$KodeDept/$currentYear/$currentMonth/";
+        $uniqueIdentifier = "WO.$KodeDept/$currentYear/$currentMonth/";
     
         // Check for the latest DkmNo with the same prefix
         $latestDkmNo = $this->db->table('tpodetail')
@@ -113,13 +125,12 @@ class ModelInsertSpk extends Model {
         return $uniqueIdentifier;
     }
     
-
     public function insertDataHeader($KodeDept, $data)
     {
         $uniquePoNo = $this->generateUniquePoNo($KodeDept);
         $uniquePoNumber = $this->generateUniquePoNumber($KodeDept);
-        $uniqueDkmNo = $this->generateUniqueDkmNo($KodeDept);
     
+        $data['KodeDept'] = $KodeDept;
         $data['PoDate'] = date('Y-m-d');
         $data['PoNo'] = $uniquePoNo;
         $data['PoNumber'] = $uniquePoNumber;
@@ -127,36 +138,34 @@ class ModelInsertSpk extends Model {
         // Insert into header table
         $this->db->table($this->tableHeader)->insert($data);
         $headerInsertedId = $this->db->insertID();
-
-        // $data['DkmNo'] = $uniqueDkmNo;
-
-        // // Insert into detail table
-        // $this->db->table($this->tableDetail)->insert($data);
-        // $detailInsertedId = $this->db->insertID();
     
         // Return the unique values along with the insert IDs
         return [
-            'headerInsertedId' => $headerInsertedId,
-           /* 'detailInsertedId' => $detailInsertedId, */
+            'insertedId' => $headerInsertedId,  // Add this line
             'PoNo' => $uniquePoNo,
             'PoNumber' => $uniquePoNumber,
         ];
     }
 
-    public function insertDataDetail($PoNo, $PoNumber, $KodeDept, $data)
+    public function insertDataDetail($KodeDept, $data)
     {
+        $uniquePoNo = $this->generateUniquePoNo($KodeDept);
+        $uniqueDkmNo = $this->generateUniqueDkmNo($KodeDept);
+    
+        $data['kodedept'] = $KodeDept;
+        $data['PoNo'] = $uniquePoNo;
+        $data['DkmNo'] = $uniqueDkmNo;
+    
         // Insert into header table
         $this->db->table($this->tableDetail)->insert($data);
         $DetailInsertedId = $this->db->insertID();
 
-        // $data['DkmNo'] = $uniqueDkmNo;
-
-        // // Insert into detail table
-        // $this->db->table($this->tableDetail)->insert($data);
-        // $detailInsertedId = $this->db->insertID();
-    
+        return [
+            'insertedId' => $DetailInsertedId,  // Add this line
+            'PoNo' => $uniquePoNo,
+            'DkmNo' => $uniqueDkmNo,
+        ];
     }
-    
 /*    public function add_data($Headerdata,$detaildata){
 
     
