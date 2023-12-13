@@ -53,6 +53,48 @@ class Add_Spk extends BaseController
         echo view('partial/footer', $data);
     }
 
+    public function NewPurchaseOrder()
+    {
+        $vpoData = $this->VPO();
+        $tpoheaderData = $this->tpoheader();
+        $tpodetailData = $this->tpodetail();
+        $tbarangData = $this->tbarang();
+    
+        $data = [
+            'vpo' => $vpoData,
+            'tpoheader' => $tpoheaderData,
+            'tpodetail' => $tpodetailData,
+            'tbarang' => $tbarangData,
+            'activeMenu' => 'Add'
+    
+    ];
+    
+        echo view('partial/header', $data);
+        echo view('/purchase_orders/manage_po', $data);
+        echo view('partial/footer', $data);
+    }
+
+    public function NewPurchaseRequisition()
+    {
+        $vpoData = $this->VPO();
+        $tpoheaderData = $this->tpoheader();
+        $tpodetailData = $this->tpodetail();
+        $tbarangData = $this->tbarang();
+    
+        $data = [
+            'vpo' => $vpoData,
+            'tpoheader' => $tpoheaderData,
+            'tpodetail' => $tpodetailData,
+            'tbarang' => $tbarangData,
+            'activeMenu' => 'Add'
+    
+    ];
+    
+        echo view('partial/header', $data);
+        echo view('/purchase_requisitions/manage_pr', $data);
+        echo view('partial/footer', $data);
+    }
+
 
 // Controller function to retrieve data for DataTable
     public function VPO()

@@ -1,23 +1,5 @@
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Current Items</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="1">Home</a></li>
-              <li class="breadcrumb-item active">Available Items</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-      
-      <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!-- Content Wrapper. Contains page content -->
+<div class="content pt-3" style="min-height: 296.4px; background-color:#c6c6c6;">
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">

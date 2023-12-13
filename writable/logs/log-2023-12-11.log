@@ -1,0 +1,15 @@
+INFO - 2023-12-11 00:47:30 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-11 00:47:35 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-11 03:29:11 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+CRITICAL - 2023-12-11 06:07:25 --> Undefined variable $conn
+in APPPATH\Views\work_orders\manage_spk.php on line 44.
+ 1 APPPATH\Views\work_orders\manage_spk.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\Users\\Nicholas Ansya\\ci4new\\app\\Views\\work_orders\\manage_spk.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Nicholas Ansya\\ci4new\\app\\Views\\work_orders\\manage_spk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/work_orders/manage_spk', [], true)
+ 5 APPPATH\Controllers\Add_Spk.php(52): view('/work_orders/manage_spk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Add_Spk->NewWorkOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add_Spk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
