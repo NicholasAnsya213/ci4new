@@ -1,0 +1,85 @@
+INFO - 2023-12-14 01:56:35 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+CRITICAL - 2023-12-14 02:28:07 --> Path cannot be empty
+in SYSTEMPATH\HotReloader\DirectoryHasher.php on line 73.
+ 1 SYSTEMPATH\HotReloader\DirectoryHasher.php(73): md5_file('')
+ 2 SYSTEMPATH\HotReloader\DirectoryHasher.php(48): CodeIgniter\HotReloader\DirectoryHasher->hashDirectory('C:\\Users\\Nicholas Ansya\\ci4new\\app')
+ 3 SYSTEMPATH\HotReloader\DirectoryHasher.php(33): CodeIgniter\HotReloader\DirectoryHasher->hashApp()
+ 4 SYSTEMPATH\HotReloader\HotReloader.php(38): CodeIgniter\HotReloader\DirectoryHasher->hash()
+ 5 APPPATH\Config\Events.php(51): CodeIgniter\HotReloader\HotReloader->run()
+ 6 SYSTEMPATH\CodeIgniter.php(868): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+INFO - 2023-12-14 03:04:48 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-14 03:07:01 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-14 03:09:22 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-14 03:36:56 --> REDIRECTED ROUTE at http://localhost:8080/Dashboard
+INFO - 2023-12-14 04:09:58 --> REDIRECTED ROUTE at http://localhost:8080/login::index
+INFO - 2023-12-14 04:10:16 --> REDIRECTED ROUTE at http://localhost:8080/login::index
+CRITICAL - 2023-12-14 04:14:02 --> require_once(C:\Users\Nicholas Ansya\ci4new\app\libraries/vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Login.php on line 13.
+ 1 APPPATH\Controllers\Login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\Users\\Nicholas Ansya\\ci4new\\app\\libraries/vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\Users\\Nicholas Ansya\\ci4new\\app\\Controllers\\Login.php', 13)
+ 2 APPPATH\Controllers\Login.php(13): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:14:29 --> Class "app\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:18:34 --> Undefined variable $link
+in APPPATH\Views\login\index.php on line 55.
+ 1 APPPATH\Views\login\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'C:\\Users\\Nicholas Ansya\\ci4new\\app\\Views\\login\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Nicholas Ansya\\ci4new\\app\\Views\\login\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login/index', [], true)
+ 5 APPPATH\Controllers\Login.php(25): view('login/index')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:31:04 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Login.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Nicholas Ansya\\ci4new\\app\\Controllers\\login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\login')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:37:45 --> Class "App\Controllers\Google_Client" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:37:46 --> Class "App\Controllers\Google_Client" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:37:46 --> Class "App\Controllers\Google_Client" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')
+CRITICAL - 2023-12-14 04:37:46 --> Class "App\Controllers\Google_Client" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Nicholas Ansya\\ci4new\\public\\index.php')

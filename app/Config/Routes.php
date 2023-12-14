@@ -32,8 +32,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('', 'Dashboard::index');
-$routes->addRedirect('/', '/Dashboard');
+$routes->get('/', 'Dashboard::index');
+$routes->get('/Login', 'Login::index');
+$routes->get('/Login/loginWithGoogle', 'Login::loginWithGoogle');
 
 
 

@@ -40,7 +40,7 @@
           Purchase Requisition
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('Add')?>" class="nav-link <?php if($activeMenu == 'Add_Spk/NewPurchaseRequisitions')  ?>">New Purchase Requisition<i class="bi bi-plus-lg"></i></a>
+          <a class="dropdown-item" href="<?php echo site_url('Add_Spk/NewPurchaseRequisition')?>" class="nav-link <?php if($activeMenu == 'Add')  ?>">New Purchase Requisition<i class="bi bi-plus-lg"></i></a>
           <a class="dropdown-item" href="<?php echo site_url('PreOrder')?>" class="nav-link <?php if($activeMenu == 'PreOrder')  ?>">Purchase Requisitions Status</a>          
         </div>
       </li>

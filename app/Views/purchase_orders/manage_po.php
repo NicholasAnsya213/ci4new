@@ -25,13 +25,13 @@
 		}
 </style>
 <!-- Content Wrapper. Contains page content -->
-<div class="content">
+<div class="content" style="background-color:#E7E7E7;">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+<section class="content-header">
 	<!-- Main content -->
 <section class="content">
 <div class="container-fluid">
-<div class="card card-outline card-info">
+<div class="card card-outline">
 	<div class="card-header">
 		<h3 class="card-title"><?php echo isset($id) ? "Update Purchase Order Details": "New Purchase Order" ?> </h3>
 	</div>
@@ -195,6 +195,10 @@
 		<td class="align-middle p-1 text-right total-price">0</td>
 	</tr>
 </table>
+</div>
+</section>
+</section>
+</div>
 <script>
 	function rem_item(_this){
 		_this.closest('tr').remove()
@@ -330,5 +334,3 @@
 
 	})
 </script>
-</div>
-</section>

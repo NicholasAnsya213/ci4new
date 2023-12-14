@@ -23,8 +23,10 @@
 			width:5vw;
 		}
 </style>
-
-<div class="content pt-3" style="min-height: 296.4px; background-color:#c6c6c6;">
+<!-- Content Wrapper. Contains page content -->
+<div class="content" style="background-color:#E7E7E7;">
+    <!-- Content Header (Page header) -->
+<section class="content-header">
 	<!-- Main content -->
 	<section class="content">
 		<div class="container-fluid">
@@ -203,6 +205,7 @@
 			</div>
 		</div>
 	</section>
+</section>
 </div>
 <table class="d-none" id="item-clone">
 	<tr class="po-item" data-id="">
